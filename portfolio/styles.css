@@ -16,8 +16,12 @@ body {
 	padding: 20% 10px 20% 10px;
 	padding: 40vh 10px 40vh 10px;
 	text-align: center;
-	background: #5396db;
-	color: white;
+	/*background: #5396db; */
+	color: #315ac4;
+	
+	background-image: url("cloud.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 }
 
 /* Increase the font size of the heading */
