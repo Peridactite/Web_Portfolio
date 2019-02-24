@@ -15,3 +15,12 @@ $(document).ready(function (){
 		}, 2000);
 	});
 });
+
+//This scrolls to the dev div
+$(document).ready(function (){
+	$("#artLink").click(function (){
+		$('html, body').animate({
+			scrollTop: $("#artDiv").offset().top
+		}, 2000);
+	});
+});
