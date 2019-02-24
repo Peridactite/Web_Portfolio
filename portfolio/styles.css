@@ -98,7 +98,7 @@ body {
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
+.smallFlex {
     -ms-flex: 30%;
     /* IE10 */
     flex: 30%;
@@ -107,10 +107,19 @@ body {
 }
 
 /* Main column */
-.main {
+.largeFlex {
     -ms-flex: 70%;
     /* IE10 */
     flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Create two equal columns that sits next to each other */
+.equalFlex {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
     background-color: white;
     padding: 20px;
 }
