@@ -1,3 +1,11 @@
+"use strict";
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#pageStart').offset().top
+    }, 2000);
+});
+
 //This scrolls to the about div
 $(document).ready(function (){
 	$("#aboutLink").click(function (){
