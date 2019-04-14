@@ -41,6 +41,20 @@ body {
     background-size: 100vw 100vh;
 }
 
+@media only screen and (max-width: 768px) {
+	.header {
+		background-image: url("resources/cloud.jpg"); 
+		background-repeat: no-repeat; 
+		background-position: center;
+		background-attachment: fixed;  
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100vh;
+		width: 100vw; 
+	}
+}
+
 /* Increase the font size of the heading */
 .header h1 {
     vertical-align: center;
@@ -167,6 +181,14 @@ body {
     padding: 20px;
 }
 
-img{
-    image-orientation: from;
+
+video{
+	
+	width: 320px;
+	height: 240px;
+}
+
+.playingVideo{
+	width: 1000px !important;
+	height: 600px !important;
 }
