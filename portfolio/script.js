@@ -53,7 +53,10 @@ $(document).ready(function () {
 			success: function (result, status, xhr) {
 				var table = $("<table><tr><th>Weather Description</th></tr>");
 
+				table.append("<tr><td>Min Temp:</td><td>" + result[0]["min_temp"] + "</td></tr>");
 				table.append("<tr><td>Max Temp:</td><td>" + result[0]["max_temp"] + "</td></tr>");
+				table.append("<tr><td>Humidity:</td><td>" + result[0]["humidity"] + "</td></tr>");
+				table.append("<tr><td>Probability:</td><td>" + result[0]["predictability"] + "%</td></tr>");
 
 				$("#ajaxDemo2").html(table);
 			},
