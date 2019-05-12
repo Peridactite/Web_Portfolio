@@ -29,7 +29,7 @@ $(document).ready(function () {
 			}, 500);
 		}
 	});
-	
+	/*
 	$("#ajaxDemo1").click(function(){
 		console.log("ajax1 clicked");
 		var xhttp = new XMLHttpRequest();
@@ -62,6 +62,7 @@ $(document).ready(function () {
 			}
 		});
 	});
+	*/
 });
 
 //This scrolls to the about div

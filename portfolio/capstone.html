@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link rel="stylesheet" href="styles.css">
+	
+	<link rel="stylesheet" type="text/css" href="resources/tooltipster-master/dist/css/tooltipster.bundle.min.css" />
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="resources/jquery.anchorScroll-master/jquery.anchorScroll.js"></script>
+	<script src="resources/tooltipster-master/dist/js/tooltipster.bundle.js"></script>
+	
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+ 
+	
+    <!-- Summary -->
+    <div class="row">
+        <div id="aboutDiv" class="largeFlex">
+            <h2><img src="resources/information-signal.png" alt="info-icon" height="20" width="20">Summary</h2>
+            <h5>Updated 3/10/19</h5>
+            <p>
+				I have been working at Electrolux for one year. I was hired as a Connectivity Intern with the responsibility of handling quality assurance for the Air Conditioners and Dehumidifiers. The main people in my team are my manager, the developer, and my x-coworker. He was an intern too and had been there for a year before leaving. My manager handled delegation of any tasks that needed doing. The developer would release updates, I would find bugs in them, and the results would be sent back to the developer. The app itself is the main focus of my job. The Frigidaire app can control the temperature, humidity,  mode, and speed of an appliance from anywhere with an internet connection. 
+				In the beginning, I mostly did manual testing on the appliances with the mobile app, but as time went on I got more and more opportunities to develop software. 
+				<br><br>
+				<h2>Work Completed</h2>
+				As I mentioned previously, my main goal as an intern is quality assurance for the Frigidaire App. Whenever there is an update, it’s my job to make sure there aren’t any bugs. Any bugs I find, I report on JIRA. JIRA is a bug tracking website, among other things. Every week I also file a report on the progress of registration of the week prior. I build charts and present the data to managers and my coworkers. In the beginning, I organized the data by hand, but now it is almost fully automated. I have also worked to support the voice command assistance offered by the Frigidaire mobile app. That means testing on the Alexa and Google Home devices.
+				<br><br>
+				<h2>Technologies and Skills</h2>
+				<br><br>
+					Git - 
+					I can easily say that my skillls in using Git have vastly increased since I started my job at Electrolux. I don’t really run into any problems with Git anymore, and I really appreciate being able to use Git so freely. Aside from version control, there are tons of other benefits to using Git. The way that I code, I will make a number of changes to my program. When I am done, I read through the “differences” in the Git GUI. This allows me to do my own code reviews, and I get an opportunity to go back and document the code. I also might notice something stupid I did or remember to remove some unused variables or functions. In short, I am way more organized with Git than I was without it. Although, this is not the intended purpose of Git. If I make any huge mistakes or delete something on accident, I can always revert to an old commit if I ever have the need. This gives me so much peace of mind since I don’t have to worry about slowing down to think super carefully before I remove something or rewrite it. I can test things out much faster this way.
+					<br><br>
+					Presentation - 
+					It didn’t seem like a big deal to me right away, but I have come to find that it makes a really huge difference if you know how to present your work well. I think the reason it’s so important to me is that no matter how hard of a worker you are or how much of a master at code you might be, if you can’t explain what you’re doing then you can’t convince people that you’re worth investing in. 
+					<br><br>
+					Information Gathering - 
+					Another skill that seems like something trivial is information gathering. It’s super important to be able to sit down with your coworkers and really absorb everything they have to share with you. If you are scheduled to meet with someone and you can’t hold on to anything they say, then people will not want to work with you. That isn’t something that happened! I’m just saying that because I immediately recognized that my coworkers would make great resources and friends. 
+					<br><br>
+					Appium and Automation Testing - 
+					The most obvious of all would be Appium. This is the tool I’ve spent the most time with. I can comfortably achieve anything I want in Appium now. I’m especially learned in Appium because of my experience with Hybrid apps. This means that I know how to deal with apps of any flavor. I’ve run into many obstacles, but I’ve managed to find my way every time. I know how to automate a span element. I know how to find text on the screen. I know how to click an element that isn’t available to locate in the native context, and can’t be clicked in the hybrid context. Aside from a select few bugs, I’ve learned a lot about code sleuthing through my Appium work. As a matter of fact, I’m suspicious that the bugs that are in my code might be originating from actual bugs in the app I’m meant to be testing, which means I’ve found bugs with automation software that were undetectable by manual testing. 
+
+			</p>
+
+        </div>
+        <div class="smallFlex">
+            <h3>A serious picture:</h3>
+            <img src="resources/myself.jpg" alt="picture of me">
+            <p></p>
+			<!-- TODO - DEAD LINKS-->
+            <div class="fakeimg" >
+				<a class="fakeimg" href="resources/DavidWoodmanResume2019V2.pdf" download target="_blank" >Download my R&eacute;sum&eacute;!</a>
+			</div><br>
+			
+            <div class="fakeimg" >
+				<a class="fakeimg" href="https://github.com/Peridactite" download target="_blank" >Track my progress on Github!</a>
+			</div><br>
+			
+            <div class="fakeimg" >
+				<a class="fakeimg" href="https://twitter.com/itsDavidWoodman?lang=en" download target="_blank" >Follow me on Twitter!</a>
+			</div><br>
+            
+        </div>
+    </div>
+
+
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>CR1: Review 2/22/19</h2>
+			<p>
+				Here is my summary for the work I have completed this week:
+				<br><br>
+				There are three different appliances that are controller by the Frigidaire app: the Window Remote Air Conditioner (aka RAC), Portable Remote Air Conditioner (aka Stromboli), and Dehumidifier (aka Dehum). The air conditioners and dehumidifiers have similar visual control screens, but very different controls. However, the two AC units have much more similar controls. The only difference between the portable and window AC units is that the portable unit has a dry mode function. This week I worked on the automation for the Dehumidifier controls. There are two control options for the Dehumidifier. It has a speed setting and a humidity setting. 
+				<br><br>
+				I set up the automation so that Appium, a mobile automation framework for Java, will store the values of the current humidity setting and speed setting. The test will tell the app to increase each respective setting and check to verify that they have changed to the correct values. If speed is set to low then increasing it should set it to high. Similar test conditions are fulfilled for the decrease functions. There weren't any problems with the speed automation. Those tests automated successfully and passed without any issues. There was an issue with the humidity automation. The lowest humidity setting is "Cont" which stands for "continuously running". The issue with this that the rest are based off numbers. There's something odd going on for "Cont" that I need to figure out since it's displaying as "cont" but the actual data value retrieved from the element is something different.... I'll need to debug this next week. 
+			</p>
+		</div>
+	</div>
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>CR2: 3/1/19</h2>
+			<p>
+				This week I learned that talking to experienced developers is really important. There is always someone who knows more than you on any given subject. I talked to the App Developer this week and we did a code review of the project. A webview is a viewport used in Hybrid mobile applications as opposed to native views which are native to specific phones and OS (ios vs android). Frigidaire is a Hybrid App. There is a function in the code that will translate the elements' coordinates in a webview into coordinates that the native device can understand. Because the webview width/height do not match the native view width/height a ratio must be calculated. Even with these calculations, we have been seeing inaccuracy in the automations' ability to find vertical element location. This was odd considering the x location worked so well. Not only did x work, but the y worked perfectly on specific devices such as the Galaxy S7.
+				<br><br>
+				We reviewed the code and devices used in automation and discovered that the phones that have onscreen buttons (in the native space) were the exact height of the innaccuracy seen in our vertical offsets! We just need to find some way of returning the height of those buttons and that will likely fix our problem...
+			</p>
+		</div>
+	</div>
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>CR4: 3/21</h2>
+			<p>
+				CR3 was missed because of car maintenence. I did not go to work that week. This week I did some maintenance on the automated Excel spreadsheets. The data used to be reliably sent in chunks of seven for the seven days off the week. That's become inconsistent for some reason so I needed to adjust the code to be more flexible. There were a couple other minor adjustments and enhancements I worked on in that project.
+				<br><br>
+				I also helped the app developer with some Google home related issues. He is working on adding support for users to control their Dehumidifier with Google home voice control. Friday I will work on the automated app testing project. 
+			</p>
+		</div>
+	</div>
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>CR5: 3/29/19</h2>
+			<p>
+				Here is my summary for the work I have completed this week:
+				<br><br>
+				There are three different appliances that are controller by the Frigidaire app: the Window Remote Air Conditioner (aka RAC), Portable Remote Air Conditioner (aka Stromboli), and Dehumidifier (aka Dehum). The air conditioners and dehumidifiers have similar visual control screens, but very different controls. However, the two AC units have much more similar controls. The only difference between the portable and window AC units is that the portable unit has a dry mode function. This week I worked on the automation for the Dehumidifier controls. There are two control options for the Dehumidifier. It has a speed setting and a humidity setting. 
+				<br><br>
+				I set up the automation so that Appium, a mobile automation framework for Java, will store the values of the current humidity setting and speed setting. The test will tell the app to increase each respective setting and check to verify that they have changed to the correct values. If speed is set to low then increasing it should set it to high. Similar test conditions are fulfilled for the decrease functions. There weren't any problems with the speed automation. Those tests automated successfully and passed without any issues. There was an issue with the humidity automation. The lowest humidity setting is "Cont" which stands for "continuously running". The issue with this that the rest are based off numbers. There's something odd going on for "Cont" that I need to figure out since it's displaying as "cont" but the actual data value retrieved from the element is something different.... I'll need to debug this next week. 
+			</p>
+		</div>
+	</div>
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>CR6: 4/5/2019</h2>
+			<p>
+				This week I worked on the AC automation. I was alter the code so that it is much more accurate in automating and verifying the functionality of the temperature. Since the range of the temperature goes from 60-90 fahrenheit, the app will loop back around to 60 if you try to increase the target temperature while you’re already at 90 degrees. Getting a human to understand this is pretty simple, but it was sort of complicated to put together in code, especially since there is an option between celsius and fahrenheit. I also made lots of changes to make the automation more viable for actual usage. Used junit to run parameterized tests so that I can run the same code in four different appliance modes. I also moved done code in the initialize method to increase efficiency. 
+			</p>
+		</div>
+	</div>
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>Cr7: 4/11/19</h2>
+			<p>
+				This week I couldn't work on the automation. Whenever there is a firm Ware update I need manually test that all of the appliances functionality works the same as before. This week I tested the appliance for bugs in the firmware. I do not look at the firmware code, but I know that this week's update was related to reducing strain on the cloud's database. 
+			</p>
+		</div>
+	</div>
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>CR8: 4/18/19</h2>
+			<p>
+				This week I could not work in the Automation. I prepared a slide for improved error codes and did some regression testing to verify some old bugs on the new refrigerator. The app developer is working on a new app and he has to make sure that all the old bugs are cleaned up before the app can go on to the app store for people to use. 
+			</p>
+		</div>
+	</div>
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>CR9: 4/25/2019</h2>
+			<p>
+				This week I added full parameterized support for the RAC. The Window RAC and Portable AC unit (Stromboli) are slightly different in a few areas, namely the way their modes function. Being able to run tests on multiple appliances greatly increases the program’s usefulness. I had to reprogram a few of the methods relating to the appliances’ differences then set up a few conditions within the JUNIT tests that would skip certain tests if the test was not relevant to the current parameters. This took some time, but will save a lot of time during runtime. 
+			</p>
+		</div>
+	</div>
+
+    <hr>
+    <!-- Week Review -->
+    <div class="row">
+        <div id="artDiv" class="largeFlex">
+            <h2>CR10: 5/11/19</h2>
+			<p>
+				This is the final week of the project. I was able to complete everything I set out to accomplish. This week there was a lot to do, but because exams were cancelled I was able to dedicate the entire week to the project. I had support for RAC and STROMBOLI, and the tests for the Dehumidifier had already been written, but not parameterized. The Sign In tests also needed to be parameterized and there still was no GUI to run the program from. 
+				<br><br>
+				The tasks for this week:
+				<ol>
+					<li>
+					Parameterize Dehumidifier Tests
+					</li>
+					<li>
+					Parameterize Sign In Tests
+					</li>
+					<li>
+					Design GUI
+					</li>
+					<li>
+					Implement back end for GUI to control which tests are run
+					<li>
+					Develop stress tests for co-worker
+					</li>
+				</ol>
+				It took a long time to parameterize because I needed to be sure that none of the tests would negatively interact with each other. However, because the Dehumidifier and Sign In tests aren’t particularly complicated (in comparison with the Rac and Stromboli) this did not take very long to do. The GUI took some time to set up since I chose to design it in Netbeans then port it over to Eclipse. I’ve used both program’s swing designers and thought Netbeans was (although lacking in other areas) had a great UI designer built in. When I was done all I needed to was copy and paste the code. For the most part the UI just lets you select which appliance you want to test and then hit the GO button. In the future the UI could include options for specific testing on that appliance like “Temperature Only” options. I made sure to include logic to disable whichever tests I didn’t running in combination with each other, as well as including an option for which phone the test would run on.
+				<br><br>
+				For the backend of the UI I chose XML to port the configurations over between the GUI and the JUNIT class because I wasn’t sure how the JUNIT class work the new set up. Looking back, I now realize the XML probably wasn’t necessary, but now I’ve learned how to read/write XML so that’s not really a bad thing. Once the XML is read by the JUNIT class, the tests will run (or not run) depending on the configurations. 
+				<br><br>
+				My co-worker mentioned how useful it would be to able to run repetitive testing throughout the day, so the final stage was adding functionality to my program to support stress testing configurations. All I really needed to do was add support to the GUI and add a condition that would repeat all tests 10x over. The dehumidifier test was able to run 10 tests within 13 minutes! That’s a major accomplishment to me. When I started each tap would take up to 10 seconds and I have reduced that to less than 1 second.
+
+			</p>
+		</div>
+	</div>
+
+
+
+    <!-- Footer -->
+    <div id="footer" class="footer">
+		
+		<!--
+		<p>Buttons under construction...</p>
+        <button class="button button5">O</button>
+        <img src="resources/brackets.png" alt="info-icon" height="20" width="20">
+		-->
+        <h2>Thank you for visiting!</h2>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/picol" title="Picol">Picol</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </div>
+
+</body>
+
+</html>
